@@ -153,10 +153,7 @@ namespace life
 
             //4*6
             string snake = "000000010110011010000000";//-1
-
-            //7*7
-            string longBarge = "0000000001000001010000010100000101000001000000000";//-1
-
+           
             string s; //строка для проверки
 
             for (int row = 1; row < tempBoard.Rows - 4; row++)
@@ -197,11 +194,6 @@ namespace life
                         if (s.Equals(longBoat)) numberOfFigures[9]++;
                         s = BuildString(tempBoard, col, row, 6, 6, 1);
                         if (s.Equals(longShip)) numberOfFigures[10]++;
-                        /*
-                        //7*7 не работает, так как использовано много костылей, чтобы исправить нужно учитывать, что сфера а не прямоугольник
-                        s = BuildString(tempBoard, col, row, 7, 7, 2);
-                        if (s.Equals(longBarge)) numberOfFigures[11]++; //считаем количество
-                        */
                     }
                 }
             }
