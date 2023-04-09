@@ -8,7 +8,6 @@ using System.Threading;
 using life;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using ScottPlot.Drawing.Colormaps;
 using System.Runtime.InteropServices;
 using System.Reflection;
 using Microsoft.VisualBasic;
