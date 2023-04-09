@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,25 +19,8 @@ namespace life
     {
         static Board board;
 
-        static private void CreateJson()
-        {
-            var parametrs = new Parameters
-            {
-                width = 50,
-                height = 20,
-                cellSize = 1,
-                liveDensity = 0.5
-            };
-
-            string fileName = "LifeParameters.json";
-            string jsonString = JsonSerializer.Serialize(parametrs);
-            File.WriteAllText(fileName, jsonString);
-        }
-
         static private void Reset() //сюда добавить выгрузку из json
         {
-            CreateJson();
-
             string fileName = "LifeParameters.json";
             string jsonString = File.ReadAllText(fileName);
             Parameters parametrs = JsonSerializer.Deserialize<Parameters>(jsonString)!;
