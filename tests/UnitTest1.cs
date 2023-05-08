@@ -1,9 +1,9 @@
-﻿using System.Xml.Linq;
+using System.Xml.Linq;
 using System.IO;
 using life;
 
-namespace tests;
-
+namespace tests
+{
 [TestClass]
 public class UnitTest1
 {
@@ -74,4 +74,5 @@ public class UnitTest1
         int expected = 2;
         Assert.AreEqual(expected, result);
     }
+}
 }
