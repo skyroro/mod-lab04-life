@@ -19,4 +19,16 @@
   <ItemGroup>
     <ProjectReference Include="..\Life\Life.csproj" />
   </ItemGroup>
+  
+  <ItemGroup>
+    <None Update="gen-239.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="gen-502.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="gen-580.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>
